@@ -1,2 +1,2 @@
-# colllabrating-Learning-platform
+# Collabrating-Learning-Platform
 A college group members Project based on the Research and social related project 
