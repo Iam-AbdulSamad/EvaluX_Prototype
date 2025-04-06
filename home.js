@@ -1,17 +1,12 @@
-const toggleBtn = document.getElementById("menu-toggle");
-const mobileMenu = document.getElementById("mobile-menu");
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
+const body = document.body;
 
-toggleBtn.addEventListener("click", () => {
+menuToggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
+    body.classList.toggle("menu-open"); // Prevent background scrolling
 });
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navMenu = document.querySelector("nav ul"); // Selecting the nav list
 
-    menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-    });
-});
 
 // Get total visitors from localStorage
 let totalVisitors = localStorage.getItem("totalVisitors") || 0;
