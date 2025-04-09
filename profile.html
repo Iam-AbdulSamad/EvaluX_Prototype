@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile - Skill Hive</title>
+    <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+    <div class="profile-wrapper">
+        <div class="profile-card">
+            <h2>My Profile</h2>
+            <form class="profile-form">
+                <div class="profile-photo">
+                    <img id="photoPreview" src="Assets/profilelogo.png" alt="Profile Photo" />
+                    <input type="file" id="photoInput" accept="image/*" />
+                </div>
+
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Enter first name" />
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Enter last name" />
+
+                <label for="aboutMe">About Me</label>
+                <textarea id="aboutMe" placeholder="Tell something about yourself"></textarea>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" />
+
+                <label for="location">Address / Location</label>
+                <input type="text" id="location" placeholder="City, State, Country" />
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const photoInput = document.getElementById('photoInput');
+        const photoPreview = document.getElementById('photoPreview');
+        photoInput.addEventListener('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+                    photoPreview.src = reader.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+
+</html>

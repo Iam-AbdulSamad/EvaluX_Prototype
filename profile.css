@@ -1,0 +1,105 @@
+:root {
+    --primary-bg: #f7f7e6;
+    --secondary-bg: #68b0ab;
+    --accent-color: #3b6064;
+    --text-primary: #000000;
+    --text-secondary: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.profile-wrapper {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile-card {
+    background-color: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    color: var(--text-secondary);
+}
+
+.profile-card h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-form label {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.profile-form input,
+.profile-form textarea {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+}
+
+.profile-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.profile-form button {
+    margin-top: 2rem;
+    background-color: var(--accent-color);
+    color: var(--text-secondary);
+    border: none;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.profile-form button:hover {
+    background-color: #2e4d51;
+}
+
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border: 3px solid var(--text-secondary);
+}
+
+.profile-photo input[type="file"] {
+    margin-top: 0.5rem;
+    color: var(--text-secondary);
+}

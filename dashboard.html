@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="Assets/logo.png" alt="Skill Hive Logo" class="logo-img">
+            <span>SkillHub</span>
+        </div>
+    
+        <div class="right-icons">
+            <!-- ✅ Clickable profile image -->
+            <a href="profile.html">
+                <img src="Assets/profilelogo.png" alt="Profile" class="profile-icon" />
+            </a>
+    
+            <!-- Toggle button -->
+            <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+        </div>
+    </header>
+
+
+    <aside class="side-panel" id="sidePanel">
+        <nav class="menu">
+            <a href="#">Home</a>
+            <!-- <a href="#">Profile</a> -->
+            <a href="#">Find Skills</a>
+            <a href="#">Join Classes</a>
+            <a href="#">Forums</a>
+            <a href="#">Messages</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </nav>
+    </aside>
+    <main class="dashboard">
+        <section class="welcome">
+            <h2>Welcome, Abdul Samad 👋</h2>
+            <p>Let’s continue your learning journey today!</p>
+        </section>
+    
+        <section class="stats">
+            <div class="stat-card">
+                <h3>🧠 Skills Shared</h3>
+                <p>12</p>
+            </div>
+            <div class="stat-card">
+                <h3>📅 Classes Attended</h3>
+                <p>8</p>
+            </div>
+            <div class="stat-card">
+                <h3>🤝 Projects Joined</h3>
+                <p>5</p>
+            </div>
+        </section>
+    
+        <section class="actions">
+            <button class="action-btn">Join Class</button>
+            <button class="action-btn">Share Skill</button>
+            <button class="action-btn">Explore Groups</button>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">📺 Live Classes</h2>
+            <div class="card-container">
+                <div class="card live-class">
+                    <h3 class="card-title">Web Development Bootcamp</h3>
+                    <p class="card-info">Instructor: Sarah Khan</p>
+                    <p class="card-info">Time: Today at 5:00 PM</p>
+                    <button class="card-btn">Join Now</button>
+                </div>
+                <div class="card live-class">
+                    <h3 class="card-title">Python for AI</h3>
+                    <p class="card-info">Instructor: Raj Mehta</p>
+                    <p class="card-info">Time: Tomorrow at 11:00 AM</p>
+                    <button class="card-btn">Join Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🧠 Project Board</h2>
+            <div class="card-container">
+                <div class="card project-card">
+                    <h3 class="card-title">AI-Powered Chatbot</h3>
+                    <p class="card-info">Team: 4 Members</p>
+                    <p class="card-info">Status: In Progress</p>
+                    <button class="card-btn">View Project</button>
+                </div>
+                <div class="card project-card">
+                    <h3 class="card-title">Smart Farming App</h3>
+                    <p class="card-info">Team: Looking for UI Dev</p>
+                    <p class="card-info">Join Deadline: Apr 15</p>
+                    <button class="card-btn">Join Team</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💬 Discussion Threads</h2>
+            <div class="card-container">
+                <div class="card thread-card">
+                    <h3 class="card-title">How to deploy React + Node app?</h3>
+                    <p class="card-info">12 replies · Last reply: 2h ago</p>
+                    <button class="card-btn">Join Thread</button>
+                </div>
+                <div class="card thread-card">
+                    <h3 class="card-title">Best platforms to teach your skills?</h3>
+                    <p class="card-info">8 replies · Last reply: 5h ago</p>
+                    <button class="card-btn">Join Thread</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+    <script>
+        const toggleBtn = document.getElementById("toggleBtn");
+            const sidePanel = document.getElementById("sidePanel");
+
+            toggleBtn.addEventListener("click", () => {
+                sidePanel.classList.toggle("active");
+            });
+        
+        document.querySelectorAll(".menu a").forEach(link => {
+                link.addEventListener("click", () => {
+                    document.querySelectorAll(".menu a").forEach(el => el.classList.remove("active"));
+                    link.classList.add("active");
+                    sidePanel.classList.remove("active"); // Hide panel
+                });
+            });
+    </script>
+</html>
