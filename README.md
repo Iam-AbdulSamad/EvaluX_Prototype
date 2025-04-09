@@ -107,7 +107,7 @@ Next steps:
 
 ## 📽️ Preview
 
-Include demo videos or screenshots in the future here for a better visual understanding of the platform.
+A Demo video or screenshot will soon be here for a better visual understanding of the platform.
 
 ---
 
