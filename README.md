@@ -1,8 +1,8 @@
 # EvaluX – Project Assessment & Skill Validation Platform
 
-EvaluX is a platform for validating **skills through real-world project assessments**. Learners and professionals can submit their projects across various domains to receive **structured feedback**, **AI-driven evaluation**, and optionally a **verified certificate**.
+EvaluX is a platform for validating **skills through real-world project assessments**. Learners and professionals can submit their projects across various domains to receive **structured feedback**, **AI-driven evaluation** and optionally a **verified certificate**.
 
-In early phases, we are focusing on **software and programming projects**, with plans to expand into **design, business, 3D modeling, and other fields** in future iterations.
+In early phases, we are focusing on **software and programming projects**, with plans to expand into **design, business, 3D modeling and other fields** in future iterations.
 
 
 ## 🚀 Problem Statement
@@ -16,7 +16,7 @@ EvaluX addresses this by offering a **real-world project submission** process wh
 EvaluX is designed with **two core user groups** in mind:
 
 1. **B2C (Direct-to-Learner)**: Independent learners and developers submitting projects to get feedback and certifications.
-2. **B2B (Course Platform Integration)**: Educational institutions, online course platforms, and companies integrating EvaluX to provide verified certifications for their students based on project submissions.
+2. **B2B (Course Platform Integration)**: Educational institutions, online course platforms and companies integrating EvaluX to provide verified certifications for their students based on project submissions.
 
 ### **Stages for Both B2C & B2B**
 ---
@@ -36,9 +36,9 @@ EvaluX is designed with **two core user groups** in mind:
 - **User**: After submission, EvaluX starts the evaluation.
 - **Backend**: 
   - Analyze code using automated tools.
-  - Provide feedback about project quality (best practices, code structure, etc.).
+  - Provide feedback about project quality (best practices, code structure, etc.)
   - If project quality is sufficient, issue a **verified skill certificate**.
-  - Provide **feedback for improvement** if project does not meet standards.
+  - Provide **feedback for improvement** if the project does not meet standards.
 
 #### **Stage 3: Feedback & Certification**
 - **User**: Receives feedback on their project, including strengths and areas for improvement.
@@ -66,9 +66,9 @@ EvaluX is designed with **two core user groups** in mind:
 
 #### **Stage 4: Evaluation Process**
 - **Backend**: 
-  - EvaluX uses **static code analysis**, **OpenAI-powered skill detection**, and **optional peer review**.
+  - EvaluX uses **static code analysis**, **OpenAI-powered skill detection** and **optional peer review**.
   - EvaluX matches the submitted project against the course's **skill track**.
-  - EvaluX returns a **pass/fail result**, **evaluation score**, and **feedback report**.
+  - EvaluX returns a **pass/fail result**, **evaluation score** and **feedback report**.
 
 #### **Stage 5: Feedback & Certification**
 - **Platform**: 
@@ -82,7 +82,7 @@ EvaluX is designed with **two core user groups** in mind:
 1. **For Learners (B2C)**: 
    - Get **real feedback** on projects.
    - Receive **verified certificates** to boost credibility.
-   - Improve skills with personalized suggestions.
+   - Improve skills with personalised suggestions.
 
 2. **For Course Platforms (B2B)**:
    - **Automate** the validation of learner projects.
@@ -111,11 +111,11 @@ Projects submitted through educational platforms (like Udemy, college LMS, etc.)
 | **Stage** | **Name** | **What It Checks** |
 |-----------|----------|--------------------|
 | Stage 1 | 📂 Upload & Prep | Prepares the code and project files for analysis |
-| Stage 2 | 🤖 AI Detection | Analyzes how much of the code is AI-generated vs. human-edited |
+| Stage 2 | 🤖 AI Detection | Analyses how much of the code is AI-generated vs human-edited |
 | Stage 3 | ▶️ Execution Check | Ensures the project runs without critical errors |
 | Stage 4 | 🧠 Concept Match | Verifies if project reflects key course concepts (e.g. loops, OOPs, DB use) |
-| Stage 5 | ✍️ Syntax & Style | Checks for clean code, formatting, and adherence to best practices |
-| Stage 6 | 📁 Structure Check | Evaluates folder organization, naming, separation of concerns |
+| Stage 5 | ✍️ Syntax & Style | Checks for clean code, formatting and adherence to best practices |
+| Stage 6 | 📁 Structure Check | Evaluates folder organisation, naming, separation of concerns |
 | Stage 7 | 🧰 Tech Stack Analysis | Detects libraries, frameworks, tools used in the project |
 | Stage 8 | 📄 Final Report + Certificate | Generates full evaluation + certificate if eligible |
 
@@ -123,7 +123,7 @@ Projects submitted through educational platforms (like Udemy, college LMS, etc.)
 
 ## 👨‍🎓 B2C – Independent Project Review
 
-In the B2C flow, individual users can upload any project to get a **complete feedback report**, including AI assistance level, execution, code quality, and improvement suggestions. **No certificate is issued.**
+In the B2C flow, individual users can upload any project to get a **complete feedback report**, including AI assistance level, execution, code quality and improvement suggestions. **No certificate is issued.**
 
 ### 🔁 Evaluation Stages (with Explanation)
 
@@ -134,7 +134,7 @@ In the B2C flow, individual users can upload any project to get a **complete fee
 | Stage 3 | ▶️ Execution Check | Validates if the project runs successfully |
 | Stage 4 | ✍️ Syntax & Style | Analyzes for linting, formatting, and readability |
 | Stage 5 | 📁 Structure Check | Reviews project organization and directory hygiene |
-| Stage 6 | 🧰 Tech Stack Detection | Lists all libraries, APIs, and frameworks used |
+| Stage 6 | 🧰 Tech Stack Detection | Lists all libraries, APIs and frameworks used |
 | Stage 7 | 🧪 Effort/Originality | Provides feedback on how unique or modified the project is |
 | Stage 8 | 📊 Final Report | Delivers detailed scorecard with suggestions, no certificate |
 
@@ -165,7 +165,7 @@ We adopt **two independent business models**:
 - **B2C**: Individual learners submit their projects to receive automated AI-based evaluation reports.
 - **B2B**: Platforms like Udemy, colleges, bootcamps, etc., integrate EvaluX for course-based project validation, unlocking certification and analytics.
 
-EvaluX follows a **flexible, scalable** monetization strategy with a clear **future pricing roadmap** based on product maturity and user growth.
+EvaluX follows a **flexible, scalable** monetisation strategy with a clear **future pricing roadmap** based on product maturity and user growth.
 
 ---
 
@@ -228,8 +228,8 @@ EvaluX follows a **flexible, scalable** monetization strategy with a clear **fut
 
 ## 📄 B2C Plan Explanation
 
-- Learners get a **report card-style breakdown** of their project’s structure, readability, AI-generated vs. human content, and concept usage.
-- This helps them benchmark their skills before submitting to jobs, hackathons, or competitions.
+- Learners get a **report card-style breakdown** of their project’s structure, readability, AI-generated vs human content and concept usage.
+- This helps them benchmark their skills before submitting to jobs, hackathons or competitions.
 - Premium credit packs offer high-value project insights at very low per-project cost.
 
 ---
@@ -261,7 +261,7 @@ EvaluX follows a **flexible, scalable** monetization strategy with a clear **fut
 ## 🚀 Notes
 
 - Project credit costs can vary in future for different **domains** (e.g., AI projects, IOT, Game Dev).
-- Advanced institutional features such as **custom analytics dashboards**, **plagiarism detection**, and **bulk student reports** will be available in Growth and Enterprise tiers only.
+- Advanced institutional features such as **custom analytics dashboards**, **plagiarism detection** and **bulk student reports** will be available in Growth and Enterprise tiers only.
 - EvaluX’s primary strength lies in its **fully AI-driven validation pipeline** without relying on human reviewers.
 
 **🔚 End of Business Model Document**
@@ -270,7 +270,7 @@ EvaluX follows a **flexible, scalable** monetization strategy with a clear **fut
 
 # ⚙️ EvaluX – Tech Stack & MVP Architecture
 
-This document outlines the complete **tech stack**, **MVP planning**, and **modular development flow** for EvaluX — an AI-powered project validation platform.
+This document outlines the complete **tech stack**, **MVP planning** and **modular development flow** for EvaluX an AI-powered project validation platform.
 
 ---
 
